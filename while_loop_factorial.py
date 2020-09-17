@@ -1,3 +1,7 @@
+"""
+Factorial function using a while loop
+"""
+
 def factorial(n):
     num = 1
     while n >= 1:
