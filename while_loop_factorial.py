@@ -9,6 +9,5 @@ def factorial(n):
         n = n - 1
     return num
 
-
 run_test = factorial(int(input("Enter a number: ")))
 print(run_test)
