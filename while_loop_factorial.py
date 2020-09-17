@@ -9,7 +9,7 @@ def factorial(n):
         n = n - 1
     return num
 
-value = int(input())
+value = int(input("Enter a number: "))
 
 run_test = factorial(value)
 print(run_test)
