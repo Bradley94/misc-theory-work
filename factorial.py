@@ -7,5 +7,5 @@ def factorial(n):
 
 value = int(input())
 
-run = factorial(value)
-print(run)
+run_test = factorial(value)
+print(run_test)
