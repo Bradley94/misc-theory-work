@@ -1,0 +1,29 @@
+"""
+TASK:
+Find all words that end in "s" and print them together separated 
+by an underscore.
+
+COMMENTS:
+This is quite roughly put together and I'm sure could be done much more 
+neatly. I'll aim to return to this code in future and create a part 2
+potentially also using list comprehension.
+"""
+word = str(input())
+listed = word.split()
+new_list = []
+
+for x in listed:
+    if x[-1] == 's':
+        new_list.append(x)
+
+# This below was my original solution before utilising the more 
+# efficient/sensible join() method.
+
+# txt = ''
+# for x in new_list:
+#   txt += x + "_"
+
+# final_txt = txt.rstrip("_")
+
+txt = '_'.join(new_list)
+print(txt)
