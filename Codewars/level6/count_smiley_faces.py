@@ -20,6 +20,8 @@ In case of an empty array return 0. You will not be tested with invalid input (i
 Order of the face (eyes, nose, mouth) elements will always be the same.
 """
 
+"""
+# Original code that could pass basic tests but not the random tests and ended up being messy
 def count_smileys(arr):
     if not arr:
         return 0
@@ -32,6 +34,26 @@ def count_smileys(arr):
         elif len(face) == 3:
             if (face[0] == ':' or face[0] == ';') and (face[2] == ')' or face[2] =='D'):
                 total +=1
+        else:
+            continue
+            
+    return total
+"""
+
+# Final working code once I realised how simple the solution could be with a 'valid' list
+def count_smileys(arr):
+    valid = [':)', ':-)', ':~)', 
+         ':D', ':-D', ':~D',
+         ';)', ';-)',';~)',
+         ';D', ';-D', ';~D']
+    
+    if not arr:
+        return 0
+    
+    total = 0
+    for face in arr:
+        if face in valid:
+            total += 1
         else:
             continue
             
