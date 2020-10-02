@@ -1,1 +1,1 @@
-Level difficulty descends rather than ascends i.e. 1 is most difficult 
+Level difficulty descends rather than ascends i.e. level 1 is the most difficult 
