@@ -18,16 +18,16 @@ EXAMPLE
 # In future I might try to redo this code without using any inbuilt Python functions
 
 def ip_to_int32(ip):
-    split_ip = ip.rsplit('.')
-    stringed_result = ''
+    split_ip = ip.rsplit('.')  # Separate out our numbers 
+    stringed_result = ''  # This will store the binary values connected as a string
     
     for value in split_ip:
         value = int(value)
-        x = "{0:b}".format(value)
-        x = str(x).zfill(8)
-        stringed_result += x
+        x = "{0:b}".format(value)  # Remove leading 0b
+        x = str(x).zfill(8)  # Ensure we have 8 'digits' 
+        stringed_result += x  
         
-    return int(stringed_result, 2)
+    return int(stringed_result, 2)  # Cast back to int and obtain our result
  
 """
 Test.describe("Basic Tests")
