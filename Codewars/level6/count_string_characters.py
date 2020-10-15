@@ -18,6 +18,12 @@ def count(user_string):
             counted[character] = counter
     
     return counted
+
+# BEST PRACTICE SOLUTION
+# from collections import Counter
+
+# def count(string):
+    # return Counter(string)
 """
 test.assert_equals(count('aba'), {'a': 2, 'b': 1})
 test.assert_equals(count(''), {})
