@@ -10,7 +10,7 @@ def init_board(n=5, random_chance=20):
     for i in range(n):
         for j in range(n):
             num = random.randrange(0, 100)
-            if num <= random_chance:   # change this value to edit the randomisation
+            if num <= random_chance:   # change random_chance line 5 to edit the randomisation
                 board[i][j] = 1
             else:
                 board[i][j] = 0
