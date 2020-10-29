@@ -21,10 +21,6 @@ def highest_rank(List):
     
     return num
 
-# Solution 2
-
-
-
 """
 test.describe("Example Tests")
 test.it("Example Test Case")
